@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 import { Todo } from "./shared/todo";
-import { todos } from "./shared/data";
+// import { todos } from "./shared/data";
 
 
 
@@ -13,11 +13,4 @@ import { todos } from "./shared/data";
 })
 export class AppComponent{
     title: string  = "Angular2";
-    todos: Todo[] = todos;
-
-    create(title: string){
-        const todo = new Todo(title);
-
-        this.todos.push(todo);
-    }
 }
